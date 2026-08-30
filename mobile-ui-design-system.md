@@ -166,6 +166,8 @@ Standard component heights: compact chip 28px, input/button 48px, prominent CTA 
 
 Standard card: `rounded-2xl border border-slate-200 bg-white p-4 shadow-sm shadow-slate-900/5`. Pressed card: `bg-slate-50 scale-[0.99]`. Selected card: `border-indigo-500 ring-2 ring-indigo-100`.
 
+The visual theme may use restrained indigo gradients on primary buttons, informational summary cards, and selected navigation capsules. Keep content surfaces predominantly white, preserve semantic state colors, and avoid gradients on destructive or status badges.
+
 ## 9. Core components
 
 ### 9.1 Buttons
@@ -216,6 +218,15 @@ For privacy, the feed shows a shortened destination; full customer details appea
 - **Loading:** skeletons matching final geometry; avoid full-page spinners for list refresh.
 - **Empty:** 120px illustration/icon, concise title, one explanation, optional CTA.
 - **Error:** inline retry for local failures; full-page state only when the screen cannot function.
+
+### 9.5 Completed-orders date filter
+
+- Show the filter only inside the completed-orders tab.
+- Default to `اليوم` and provide compact presets for `7 أيام` and `30 يومًا`.
+- A `مخصصة` chip opens a bottom sheet with labeled start and end date fields.
+- Display the currently applied period above the chips and preserve it when returning from order details.
+- Validate that the start date is not later than the end date and that future dates cannot be selected.
+- Use a compact indigo summary surface with white selected chips; the filter must remain visually subordinate to the completed-order cards.
 
 ## 10. Navigation patterns
 

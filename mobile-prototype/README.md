@@ -17,6 +17,7 @@ Then open `http://127.0.0.1:4173`.
 - Driver sign in
 - Three-step setup flow using one shared component
 - Deliveries feed with unlimited active orders and an informational count
+- Completed-order date filtering for today, 7 days, 30 days, and a custom range
 - New-assignment preview with accept/reject validation
 - Text-address assignment and order details without an in-app map
 - One clear primary action for each in-progress delivery stage
@@ -26,6 +27,7 @@ Then open `http://127.0.0.1:4173`.
 - Offline queue/sync screen and conflict-safe messaging
 - Driver profile, active-order count, and branch selector
 - Reusable status badges plus normal/loading/empty/error preview states
+- Enhanced indigo visual theme with layered surfaces and clearer active states
 
 The desktop prototype sidebar exposes every screen and lets reviewers simulate
 loading, empty, error, and offline conditions. On a phone-sized browser, the
